@@ -15,9 +15,8 @@ function apagar(){
 
 function calcular(){
      try{
-          display.value = "ERROR";
-          
-     }catch{
           display.value = eval(display.value);
+     }catch{
+          display.value = "ERROR";
      }
 }
