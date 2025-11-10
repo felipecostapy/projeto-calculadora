@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.creditos {
+     text-align: center;  
+}
+
+.creditos > p > a {
+     color: white;
+     text-decoration: none;
+}
+
+.calculadora {
+     background: #222;
+     padding: 20px;
+     border-radius: 15px;
+     box-shadow: 0 0 15px, rgba(0, 0, 0, 0.5);
+}
+
+#display {
+     box-sizing: border-box;
+     width: 100%;
+     height: 60px;
+     font-size: 1.5em;
+     text-align: right;
+     margin-bottom: 15px;
+     padding: 10px;
+     border: none;
+     border-radius: 10px;
+     background: black;
+     color: white;
+     border: 2px solid white;
+}
+
+.botoes {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 10px;
+     
+}
+
+button {
+     height: 60px;
+     font-size: 1.2em;
+     border: none;
+     border-radius: 10px;
+     background: #333;
+     color: white;
+     cursor: pointer;
+     transition: 0.2s;
+     
+}
+
+button:hover {
+     color: aqua;
+     background-color: #4b4a4a;
+     transform: scale(1.05);
+}
+
+.igual {
+     grid-row: span 2;
+     background: #0078ff;
+     color: white;
+     font-size: 1.5rem;
+     height: 100%;
+}
+
+.zero {
+     grid-column: span 2;
+}
+
